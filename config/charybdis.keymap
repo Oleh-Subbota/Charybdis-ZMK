@@ -41,17 +41,17 @@
 
         Esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
+            key-positions = <13 14>;
         };
 
         Delete {
             bindings = <&kp DELETE>;
-            key-positions = <27 28>;
+            key-positions = <44 45>;
         };
-	
+
         caps {
             bindings = <&caps_word>;
-            key-positions = <31 32>;
+            key-positions = <52 49>;
         };
     };
 
@@ -60,36 +60,35 @@
 
         colepoq {
             bindings = <
-&hmrs F11 ESC         &hmrs F1 N1       &hmrs F2 N2      &hmr F3 N3       &hmr F4 N4        &hmr F5 N5        &hmr F6 N6  &hmr F7 N7       &hmr F8 N8     &hmrs F9 N9       &hmrs F10 N0 &hmrs F12 BACKSPACE
-&kp TAB         &kp Z   &kp W    &kp F             &kp P         &kp B                     &hmr HOME K       &kp L            &kp O         &hmrs END Q   &kp SQT &kp BSLH
-&kp CAPSLOCK    &kp U  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T  &kp G                     &kp M             &hmr RSHFT N     &hmr RCTRL E  &hmrs RALT A  &kp I &kp SQT
-&kp LEFT_SHIFT  &kp Y  &kp X             &kp C         &kp D         &kp V                     &kp J             &kp H            &kp COMMA     &kp DOT       &kp SLASH &kp RIGHT_SHIFT
-                                 &kp LEFT_CONTROL  &kp SPACE     &mo 1           &kp DELETE  &kp SPACE
-                                                   &kp LEFT_WIN  &kp LEFT_ALT    &kp ENTER
+&hmrs F11 ESC   &hmrs F1 N1  &hmrs F2 N2       &hmr F3 N3    &hmr F4 N4    &hmr F5 N5      &hmr F6 N6          &hmr F7 N7     &hmr F8 N8    &hmrs F9 N9   &hmrs F10 N0  &hmrs F12 BACKSPACE
+&kp TAB         &kp Z        &kp W             &kp F         &kp P         &kp B           &hmr HOME K         &kp L          &kp O         &hmrs END Q   &kp SQT       &kp BSLH
+&kp LCTRL       &kp U        &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T  &kp G           &kp M               &hmr RSHFT N   &hmr RCTRL E  &hmrs RALT A  &kp I         &kp SEMI
+&kp LEFT_SHIFT  &kp Y        &kp X             &kp C         &kp D         &kp V           &kp J               &kp H          &kp COMMA     &kp DOT       &kp SLASH     &kp RIGHT_SHIFT
+                                               &mo 2         &lt 1 SPACE   &kp LCTRL       &hmr RGUI ENTER     &kp BACKSPACE
+                                                             &kp LEFT_WIN  &kp LEFT_ALT    &hmr RSHIFT DELETE
             >;
         };
 
         util {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6        &kp F7     &kp F8     &kp F9    &kp F10       &kp F11    &kp F12
-&trans  &none   &none   &none   &none   &trans        &none      &none      &none     &kp UP_ARROW  &kp MINUS  &kp EQUAL
-&trans  &none   &none   &none   &none   &trans        &mkp LCLK  &mkp RCLK  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &none         &none      &none      &trans    &trans        &none      &trans
-                        &trans  &trans  &trans    &mkp LCLK  &mkp RCLK
-                                &trans  &trans        &trans
+&none  &none      &none             &none              &none      &tdbt     &bt BT_CLR      &none           &none         &none            &none     &none
+&none  &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &none     &none           &none           &none         &none            &none     &none
+&none  &kp MINUS  &kp LBRC          &kp RBRC           &kp EQUAL  &none     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp APOS  &none
+&none  &none      &kp LPAR          &kp RPAR           &none      &none     &none           &none           &none         &trans           &none     &none
+                                    &trans             &trans     &trans    &trans          &trans
+                                                       &trans     &trans    &trans
             >;
         };
 
         mouse {
             bindings = <
-&trans  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans        &trans        &trans        &trans          &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_CLR_ALL  &trans        &trans        &trans        &trans          &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans        &bt BT_CLR    &trans        &trans          &bt BT_NXT  &trans  &trans  &trans  &trans  &trans
-                                      &trans        &trans        &trans          &trans      &trans
-                                                    &trans        &trans          &trans
+&none  &none  &none           &none           &none            &none     &none   &none      &none      &none      &none  &none
+&none  &none  &none           &msc SCRL_UP    &none            &none     &none   &mkp MB4   &none      &mkp MB5   &none  &none
+&none  &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none     &none   &mkp LCLK  &mkp MCLK  &mkp RCLK  &none  &none
+&none  &none  &none           &none           &none            &none     &none   &none      &none      &none      &none  &none
+                              &trans          &trans           &trans    &trans  &trans
+                                              &trans           &trans    &trans
             >;
         };
-
     };
 };
